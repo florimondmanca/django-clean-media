@@ -1,0 +1,29 @@
+language: python
+
+cache: pip
+
+python:
+  - "3.4"
+  - "3.5"
+  - "3.6"
+
+env:
+  - DJANGO_VERSION=1.8
+  - DJANGO_VERSION=1.11
+  - DJANGO_VERSION=2.0
+  - DJANGO_VERSION=2.1
+
+# Python 3.7 only available in xenial distribution
+matrix:
+  include:
+    - python: "3.7"
+      dist: xenial
+      sudo: true
+      # Only Django 2.0 is supported in Python 3.7
+      env: DJANGO_VERSION=2.0
+
+install:
+  - pip install django==$DJANGO_VERSION
+
+script:
+  - python runtests.py

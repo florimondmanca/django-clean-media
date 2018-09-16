@@ -13,8 +13,8 @@ This Django app provides simple utilities to **remove unused media files**.
 
 ## Compatibility
 
-- Django 1.8+ and 2.0+
-- Python 3.4+
+- Tested under Django 1.8, 1.11, 2.0 and 2.1
+- Tested under Python 3.4, 3.5, 3.6 and 3.7
 
 ## Install
 
