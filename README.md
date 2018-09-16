@@ -59,3 +59,31 @@ call_command('clean_media')
 ### Periodic calls
 
 Integrating the two previous usages with task scheduling tools (such as Celery or Cron jobs), you can setup `django-clean-media` to clean your media files periodically. 🤖
+
+## Development
+
+### Install
+
+To try out the project locally, you can install development requirements in a virtualenv:
+
+```bash
+$ python3 -m venv env
+$ . env/bin/activate
+$ pip install -r requirements-dev.txt
+```
+
+### Tests
+
+Run tests using:
+
+```bash
+$ python runtests.py
+```
+
+### CI/CD
+
+TODO
+
+### Deployment to PyPI
+
+TODO
