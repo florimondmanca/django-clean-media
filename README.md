@@ -1,6 +1,12 @@
 # django-clean-media
 
+[![Build Status](https://img.shields.io/travis-ci/florimondmanca/django-clean-media.svg?style=flat-square)](https://travis-ci.org/florimondmanca/django-clean-media)
+[![Python](https://img.shields.io/badge/python-3.4+-blue.svg?style=flat-square)](https://docs.python.org/3/)
+[![Django](https://img.shields.io/badge/django-1.8+-blue.svg?style=flat-square)](https://www.djangoproject.com)
+
 > 🚧 Work In Progress 🚧
+
+Media files tend to go stale as a result of not being deleted along with their references in database.
 
 This Django app provides simple utilities to **remove unused media files**.
 
@@ -9,7 +15,7 @@ This Django app provides simple utilities to **remove unused media files**.
 - Configurable management command
 - Looks for unused files in `FileField` and `ImageField`
 - Easily extensible to support other fields that can hold references to files (such as Markdown fields)
-- Integrates with any storage backend (e.g. disk, cloud…)
+- Integrates with any storage backend (e.g. disk storage, cloud storage…)
 
 ## Compatibility
 
@@ -82,8 +88,8 @@ $ python runtests.py
 
 ### CI/CD
 
-TODO
+CI/CD is configured on [Travis CI](https://travis-ci.org/florimondmanca/django-clean-media).
 
-### Deployment to PyPI
+### Releasing to PyPI
 
 TODO
